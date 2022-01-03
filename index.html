@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="uff-8">
+        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>DOM-programhoroscope</title>
         <style>
@@ -14,23 +14,39 @@
                 font-size: 20px;
                 padding:10px;
                 border-radius: 5px;
-                transition: all 1s;
-            }
-            button:hover {
-                background-color: gray;
                 
             }
-            p {
+            button:hover {
+                background-color: rgb(209, 209, 209);
+                
+            }
+            .program p {
                 border-bottom: 2px solid gray;
                 font-size: 24px;
                 padding-bottom:5px;
+                font-style: unset;
+            }
+
+            p {
+                font-size: 20px;
+                font-style:italic; 
+            }
+
+            h1 {
+                font-size: 35px;
+                text-align: center;
+                margin-bottom: 40px;
             }
         </style>
     </head>
     <body>
-        <h1>PROGRAM HOROSKOP</h1>
-        <button>Click Here!</button>
-        <p>Keberuntungan Anda hari ini :</p>
+        <div class="program">
+            <h1>PROGRAM HOROSKOP</h1>
+            <button>Click Here!</button>
+            <p>Keberuntungan Anda hari ini :</p>
+        </div>
+        <p id="container"></p>
+
         
         <script src="./script.js"></script>
     </body>
