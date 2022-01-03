@@ -6,12 +6,16 @@ klik.onclick= ubahWarnaKlik;
 
 
 klik.addEventListener('click', function() {
-    const body = document.querySelector('body');
-    const p = document.createElement('body');
-    const textBaru= document.createTextNode('ahahahah');
-    p.appendChild(textBaru);
-    body.appendChild(p);
-    //const randomNumber = Date.now();
-    //p.appendChild(randomNumber)
-    //document.getElementsByTagName('p').innerHTML=randomNumber;
+    const randomNumber = Date.now();
+    var hasil = document.getElementById('container');
+    if (randomNumber%15===0) {
+        hasil.innerHTML='Boleh juga!';
+    } else if (randomNumber%4===0) {
+        hasil.innerHTML='Boleh juga!';
+    } else if (randomNumber%7===0) {
+        hasil.innerHTML='Mengerikan!';
+    } else {
+        hasil.innerHTML='Hebat!';
+    }
 });
+    
